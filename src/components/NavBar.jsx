@@ -53,7 +53,7 @@ const NavBar = () => {
           {loggedIn && (
             <NavLink to="/login">
               <p
-                className="px-3 py-1.5 lg:px-5 md:py-2 text-base bg-blue-600 border hover:border-blue-200 border-blue-500 rounded-md:md text-lg text-white tracking-widest font-serif"
+                className="px-3 py-1.5 lg:px-5 md:py-2 text-base bg-blue-600 border hover:border-blue-200 border-blue-500 rounded-md   md:text-lg text-white tracking-widest font-serif"
                 onClick={() => {
                   setLoggedIn(false);
                   toast.success("logged out successfully");
