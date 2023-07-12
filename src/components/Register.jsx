@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,NavLink } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import "../index.css";
@@ -213,6 +213,14 @@ const Register = () => {
           className="cursor-pointer font-serif mt-3 w-full py-2 rounded-lg bg-blue-700 text-gray-100 font-bold tracking-wider text-lg mb-1 hover:shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] hover:bg-blue-600 hover:text-white"
         />
       </form>
+      <div className="w-full pb-2">
+        <p className="text-center my-2 text-gray-400 italic">
+          Alreay a user?{" "}
+          <NavLink to="/login">
+            <span className="text-blue-500 underline">login</span>
+          </NavLink>{" "}
+        </p>
+      </div>
     </div>
   );
 };
